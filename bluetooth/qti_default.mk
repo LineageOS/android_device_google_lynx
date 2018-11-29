@@ -111,7 +111,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth SAR test tools
 ifneq (,$(filter true, $(TARGET_USE_QTI_BT_SAR_V1_1) $(TARGET_USE_QTI_BT_SAR)))
-   PRODUCT_PACKAGES_DEBUG += bluetooth_sar_test
+   PRODUCT_PACKAGES_ENG += bluetooth_sar_test
 endif
 
 # Bluetooth (Vendor) SoC, BDA in device tree, and WiPower
@@ -121,7 +121,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.vendor.bluetooth.emb_wp_mode=false \
 	ro.vendor.bluetooth.wipower=false
 
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.service.bdroid.soclog=true \
 	persist.vendor.service.bdroid.fwsnoop=true
