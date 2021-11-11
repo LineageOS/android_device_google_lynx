@@ -22,6 +22,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     HbmSVManagerOverlayLynx
 
+# Kernel
+TARGET_PREBUILT_KERNEL := device/google/lynx-kernel/Image.lz4
+
 # wireless_charger HAL service
 include device/google/gs-common/wireless_charger/wireless_charger.mk
 
