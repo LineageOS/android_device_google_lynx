@@ -17,7 +17,8 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_lynx.mk \
     $(LOCAL_DIR)/aosp_lynx_hwasan.mk \
-    $(LOCAL_DIR)/factory_lynx.mk
+    $(LOCAL_DIR)/factory_lynx.mk \
+    $(LOCAL_DIR)/lineage_lynx.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_lynx-trunk_staging-userdebug

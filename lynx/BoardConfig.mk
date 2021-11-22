@@ -43,3 +43,6 @@ include device/google/gs201/BoardConfig-common.mk
 -include vendor/google_devices/lynx/proprietary/BoardConfigVendor.mk
 include device/google/lynx/sepolicy/lynx-sepolicy.mk
 include device/google/gs201/wifi/qcom/BoardConfig-wifi.mk
+
+DEVICE_PATH := device/google/lynx
+include $(DEVICE_PATH)/$(TARGET_BOOTLOADER_BOARD_NAME)/BoardConfigLineage.mk
