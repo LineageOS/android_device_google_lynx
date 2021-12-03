@@ -27,3 +27,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="lynx-user 14 UP1A.231005.007 10754064 release-keys"
 
 BUILD_FINGERPRINT := google/lynx/lynx:14/UP1A.231005.007/10754064:user/release-keys
+
+$(call inherit-product, vendor/google/lynx/lynx-vendor.mk)
