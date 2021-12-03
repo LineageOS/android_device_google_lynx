@@ -5,3 +5,5 @@
 #
 
 include device/google/lynx/BoardConfigLineage.mk
+
+include vendor/google/lynx/BoardConfigVendor.mk
