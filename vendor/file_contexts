@@ -7,3 +7,6 @@
 /dev/lwis-sensor-imx712                                                     u:object_r:lwis_device:s0
 /dev/lwis-sensor-imx712-uw                                                  u:object_r:lwis_device:s0
 /dev/lwis-sensor-imx787                                                     u:object_r:lwis_device:s0
+
+# Wifi
+/dev/wlan                               u:object_r:vendor_wlan_device:s0
