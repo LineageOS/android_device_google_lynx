@@ -1,0 +1,9 @@
+# Devices
+/dev/lwis-act-lc898129                                                      u:object_r:lwis_device:s0
+/dev/lwis-eeprom-lc898129                                                   u:object_r:lwis_device:s0
+/dev/lwis-eeprom-m24c64x-imx712                                             u:object_r:lwis_device:s0
+/dev/lwis-eeprom-m24c64x-imx712-uw                                          u:object_r:lwis_device:s0
+/dev/lwis-ois-lc898129                                                      u:object_r:lwis_device:s0
+/dev/lwis-sensor-imx712                                                     u:object_r:lwis_device:s0
+/dev/lwis-sensor-imx712-uw                                                  u:object_r:lwis_device:s0
+/dev/lwis-sensor-imx787                                                     u:object_r:lwis_device:s0
