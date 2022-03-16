@@ -1,2 +1,5 @@
 # Haptics
 genfscon sysfs /devices/platform/10970000.hsi2c/i2c-4/i2c-cs40l26a             u:object_r:sysfs_vibrator:s0
+
+# Wifi
+genfscon sysfs /devices/soc0/soc_id      u:object_r:vendor_location_sysfs:s0
