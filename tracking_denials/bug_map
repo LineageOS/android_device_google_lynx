@@ -1,4 +1,3 @@
 hal_health_default sysfs file b/234311757
 hal_radioext_default hal_bluetooth_default binder b/234311798
 init-insmod-sh init-insmod-sh capability b/234311675
-system_suspend sysfs dir b/234311758
