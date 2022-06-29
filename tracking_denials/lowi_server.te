@@ -1,2 +1,0 @@
-# b/235281415
-dontaudit lowi_server vendor_location:unix_dgram_socket { read write };
