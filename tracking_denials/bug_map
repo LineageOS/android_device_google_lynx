@@ -1,2 +1,3 @@
 hal_radioext_default hal_bluetooth_default binder b/234311798
 init-insmod-sh init-insmod-sh capability b/234311675
+vendor_location lowi_server unix_dgram_socket b/237467750
