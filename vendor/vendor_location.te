@@ -13,3 +13,7 @@ allow vendor_location vendor_location_socket:dir rw_dir_perms;
 
 # /sys/devices/soc0/soc_id
 allow vendor_location vendor_location_sysfs:file create_file_perms;
+
+# /dev/socket/location/mq/*
+allow vendor_location lowi_server:unix_dgram_socket {sendto read write};
+allow vendor_location hal_wifi_ext:unix_dgram_socket {sendto read write};
