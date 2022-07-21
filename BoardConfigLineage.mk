@@ -20,3 +20,31 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := $(foreach m,$(BOARD_VENDOR_KERNEL_MODULES_LO
 BOARD_VENDOR_KERNEL_RAMDISK_KERNEL_MODULES_LOAD_RAW := $(strip $(shell cat device/google/lynx/vendor_kernel_boot.modules.load))
 BOARD_VENDOR_KERNEL_RAMDISK_KERNEL_MODULES_LOAD := $(foreach m,$(BOARD_VENDOR_KERNEL_RAMDISK_KERNEL_MODULES_LOAD_RAW),$(notdir $(m)))
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_KERNEL_RAMDISK_KERNEL_MODULES_LOAD)
+
+TARGET_KERNEL_EXT_MODULES := \
+    amplifiers/audiometrics \
+    amplifiers/cs35l41 \
+    amplifiers/cs35l45 \
+    amplifiers/cs40l26 \
+    amplifiers/drv2624 \
+    aoc \
+    aoc/alsa \
+    aoc/usb \
+    bluetooth/qcom \
+    bms \
+    display/samsung \
+    edgetpu/janeiro/drivers/edgetpu \
+    gpu/mali_kbase \
+    gpu/mali_pixel \
+    gxp/gs201 \
+    lwis \
+    nfc \
+    power/reset \
+    touch/common \
+    touch/focaltech/ft3658 \
+    touch/goodix \
+    uwb/kernel \
+    video/gchips \
+    wlan/wcn6740/cnss2 \
+    wlan/wcn6740/wlan/qcacld-3.0 \
+    ../devices/google/lynx/display
