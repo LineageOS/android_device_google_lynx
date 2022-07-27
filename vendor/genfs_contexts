@@ -3,6 +3,7 @@ genfscon sysfs /devices/platform/10970000.hsi2c/i2c-4/i2c-cs40l26a             u
 
 # Wifi
 genfscon sysfs /devices/soc0/soc_id      u:object_r:vendor_location_sysfs:s0
+genfscon proc /debugdriver/driverdump    u:object_r:vendor_proc_wifi_dbg:s0
 
 # BMS
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-6/i2c-p9222                 u:object_r:sysfs_wlc:s0
