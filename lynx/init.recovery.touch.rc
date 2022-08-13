@@ -1,0 +1,4 @@
+on boot
+   insmod /lib/modules/goog_touch_interface.ko
+   insmod /lib/modules/focal_touch.ko
+   insmod /lib/modules/goodix_brl_touch.ko
