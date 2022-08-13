@@ -39,8 +39,6 @@ extra/cnss_utils/cnss_plat_ipc_qmi_svc.ko
 extra/cnss_utils/cnss_utils.ko
 extra/cnss_utils/wlan_firmware_service.ko
 extra/drv2624.ko
-extra/focal_touch.ko
-extra/goodix_brl_touch.ko
 extra/goog_touch_interface.ko
 extra/google_dock.ko
 extra/google_dual_batt_gauge.ko
