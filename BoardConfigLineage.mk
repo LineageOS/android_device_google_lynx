@@ -15,11 +15,14 @@ TARGET_KERNEL_DTB := \
     google/devices/lynx/google-base/gs201-b0_v2-ipop.dtb
 
 # Kernel modules
+BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD_RAW := $(strip $(shell cat device/google/tangorpro/{vendor_kernel_boot,recovery}.modules.load))
+BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := $(foreach m,$(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD_RAW),$(notdir $(m)))
 BOARD_VENDOR_KERNEL_MODULES_LOAD_RAW := $(strip $(shell cat device/google/lynx/vendor_dlkm.modules.load))
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(foreach m,$(BOARD_VENDOR_KERNEL_MODULES_LOAD_RAW),$(notdir $(m)))
 BOARD_VENDOR_KERNEL_RAMDISK_KERNEL_MODULES_LOAD_RAW := $(strip $(shell cat device/google/lynx/vendor_kernel_boot.modules.load))
 BOARD_VENDOR_KERNEL_RAMDISK_KERNEL_MODULES_LOAD := $(foreach m,$(BOARD_VENDOR_KERNEL_RAMDISK_KERNEL_MODULES_LOAD_RAW),$(notdir $(m)))
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_KERNEL_RAMDISK_KERNEL_MODULES_LOAD)
+RECOVERY_KERNEL_MODULES := $(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD)
 
 TARGET_KERNEL_EXT_MODULES := \
     amplifiers/audiometrics \
