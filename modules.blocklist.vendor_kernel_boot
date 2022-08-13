@@ -1,0 +1,3 @@
+blocklist focal_touch.ko
+blocklist goodix_brl_touch.ko
+blocklist goog_touch_interface.ko
