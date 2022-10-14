@@ -16,4 +16,5 @@ allow vendor_location vendor_location_sysfs:file create_file_perms;
 
 # /dev/socket/location/mq/*
 allow vendor_location lowi_server:unix_dgram_socket {sendto read write};
+allow vendor_location hal_wifi_default:unix_dgram_socket {sendto read write};
 allow vendor_location hal_wifi_ext:unix_dgram_socket {sendto read write};
