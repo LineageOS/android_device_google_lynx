@@ -28,6 +28,7 @@ allow lowi_server hal_wifi_supplicant_default:unix_dgram_socket sendto;
 allow lowi_server vendor_wifihal_socket:dir rw_dir_perms;
 allow lowi_server vendor_wifihal_socket:sock_file create_file_perms;
 allow lowi_server vendor_wifihal_socket:unix_dgram_socket sendto;
+unix_socket_send(lowi_server, vendor_wifihal, hal_wifi_default);
 unix_socket_send(lowi_server, vendor_wifihal, hal_wifi_ext);
 
 # /dev/socket/vendor_location
