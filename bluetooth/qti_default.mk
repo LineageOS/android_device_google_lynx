@@ -43,7 +43,7 @@ PRODUCT_COPY_FILES += \
 DEVICE_MANIFEST_FILE += \
 	device/google/lynx/bluetooth/manifest_bluetooth.xml
 
-BOARD_SEPOLICY_DIRS += device/google/lynx-sepolicy/bluetooth
+BOARD_SEPOLICY_DIRS += device/google/lynx/sepolicy/bluetooth
 
 BOARD_HAVE_BLUETOOTH_QCOM = true
 BOARD_USES_COMMON_BLUETOOTH_HAL = true
