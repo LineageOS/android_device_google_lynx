@@ -1,5 +1,3 @@
 crash_dump vendor_slog_file dir b/238837168
-hal_radioext_default hal_bluetooth_default binder b/234311798
-init-insmod-sh init-insmod-sh capability b/234311675
 kernel vendor_charger_debugfs dir b/239887174
 kernel vendor_regmap_debugfs dir b/238143398
