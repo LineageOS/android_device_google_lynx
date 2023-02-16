@@ -1,5 +1,2 @@
 # Camera
 set_prop(vendor_init, vendor_camera_prop)
-
-# Haptics
-get_prop(vendor_init, adaptive_haptics_prop)
