@@ -16,6 +16,3 @@
 /vendor/bin/loc_launcher                u:object_r:vendor_location_exec:s0
 /vendor/bin/lowi-server                 u:object_r:lowi_server_exec:s0
 /vendor/bin/cnss-daemon                 u:object_r:cnss-daemon_exec:s0
-
-# Haptics
-/vendor/bin/hw/android\.hardware\.vibrator-service\.cs40l26-private-lynx   u:object_r:hal_vibrator_default_exec:s0
