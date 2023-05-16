@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "daf449a8_d63eeecc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2023-05-16T18:33:45Z",
+      "side": 1,
+      "message": "Just noticed that this doesn\u0027t have .7x for front camera, but that\u0027s the same on panther as well.",
+      "revId": "5a05cf18ea5cac79ca0fe9a300c990a48a5f13c0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
