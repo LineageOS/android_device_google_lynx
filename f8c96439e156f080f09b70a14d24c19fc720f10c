@@ -16,6 +16,24 @@
       "message": "I think stock may have it as:\n\n```\n\u003citem\u003e1\u003c/item\u003e \u003citem\u003e0.7\u003c/item\u003e \u003citem\u003e1.0/item\u003e\n\u003citem\u003e1\u003c/item\u003e \u003citem\u003e1\u003c/item\u003e \u003citem\u003e1.36291039\u003c/item\u003e\n```\n\n\nAka they call the default output of the camera 0.7 since it\u0027s ultrawide.",
       "revId": "f8c96439e156f080f09b70a14d24c19fc720f10c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0200c6c_e21504af",
+        "filename": "overlay-lineage/packages/apps/Aperture/app/src/main/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2023-05-17T14:22:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e088e2ae_095ced62",
+      "revId": "f8c96439e156f080f09b70a14d24c19fc720f10c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
