@@ -34,6 +34,24 @@
       "parentUuid": "daf449a8_d63eeecc",
       "revId": "5a05cf18ea5cac79ca0fe9a300c990a48a5f13c0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "da763ae0_9952397e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2023-05-17T13:22:06Z",
+      "side": 1,
+      "message": "Inside the google camera UI, we have 0.7x - don\u0027t have to be on stock for that.\n\nIt might be handled by the app or somewhere else in the HAL without being exposed to cameraX",
+      "parentUuid": "d6d0e981_ee831793",
+      "revId": "5a05cf18ea5cac79ca0fe9a300c990a48a5f13c0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
