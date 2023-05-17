@@ -16,6 +16,24 @@
       "message": "Just noticed that this doesn\u0027t have .7x for front camera, but that\u0027s the same on panther as well.",
       "revId": "5a05cf18ea5cac79ca0fe9a300c990a48a5f13c0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d6d0e981_ee831793",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15346
+      },
+      "writtenOn": "2023-05-17T02:10:18Z",
+      "side": 1,
+      "message": "Stock seems to have 1 and 1.4x only, not sure whats the point of 1.4x but i\u0027ll add it soon",
+      "parentUuid": "daf449a8_d63eeecc",
+      "revId": "5a05cf18ea5cac79ca0fe9a300c990a48a5f13c0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
