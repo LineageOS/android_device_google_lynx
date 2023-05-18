@@ -16,6 +16,23 @@
       "message": "This\u0027ll be a thing on many pixels, all tensors I think?",
       "revId": "35af4fb937084ca9851401d435298aa5e4afab79",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "57c0e71a_db5c3a39",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15346
+      },
+      "writtenOn": "2023-05-18T09:52:49Z",
+      "side": 1,
+      "message": "Slider will still show original zoom ratios reported by camera (e.g. 1 instead of 0.7 and 1.4 instead of 1)\n\nMore of an aperture undefined case rather than an actual issue tbh, but still bad UX",
+      "revId": "35af4fb937084ca9851401d435298aa5e4afab79",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
