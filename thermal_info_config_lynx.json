@@ -124,6 +124,10 @@
                 {
                     "CdevRequest": "tpu_cooling",
                     "LimitInfo": [0, 2, 3, 4, 5, 5, 5]
+                },
+                {
+                    "CdevRequest": "gxp-cooling",
+                    "LimitInfo": [0, 0, 0, 0, 0, 99, 99]
                 }
             ]
         },
@@ -196,7 +200,7 @@
                     "CdevRequest": "thermal-cpufreq-2",
                     "CdevWeightForPID": [1, 1, 1, 1, 1, 1, 1],
                     "MaxReleaseStep": 1,
-                    "MaxThrottleStep": 1,
+                    "MaxThrottleStep": 2,
                     "BindedPowerRail": "S2M_VDD_CPUCL2",
                     "CdevCeiling": [0, 15, 15, 15, 15, 17, 17],
                     "LimitInfo": [0, 0, 0, 0, 15, 17, 17]
@@ -251,7 +255,7 @@
                     "CdevRequest": "thermal-cpufreq-2",
                     "CdevWeightForPID": [1, 1, 1, 1, 1, 1, 1],
                     "MaxReleaseStep": 1,
-                    "MaxThrottleStep": 1,
+                    "MaxThrottleStep": 2,
                     "BindedPowerRail": "S2M_VDD_CPUCL2",
                     "CdevCeiling": [0, 15, 15, 15, 15, 17, 17],
                     "LimitInfo": [0, 0, 0, 0, 15, 17, 17]
@@ -807,6 +811,11 @@
             "Name":"tpu_cooling",
             "Type":"NPU",
             "WritePath":"/dev/thermal/cdev-by-name/tpu_cooling/user_vote"
+        },
+        {
+            "Name":"gxp-cooling",
+            "Type":"NPU",
+            "WritePath":"/dev/thermal/cdev-by-name/gxp-cooling/user_vote"
         }
     ],
     "PowerRails":[
