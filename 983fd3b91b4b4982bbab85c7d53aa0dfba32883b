@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "57419601_b6a99664",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32770
+      },
+      "writtenOn": "2023-06-17T17:52:02Z",
+      "side": 1,
+      "message": "Abandoning this one in lieu of \n\nhttps://review.lineageos.org/c/LineageOS/android_device_google_lynx/+/359382",
+      "revId": "983fd3b91b4b4982bbab85c7d53aa0dfba32883b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
