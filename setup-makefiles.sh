@@ -25,6 +25,18 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
+function vendor_imports() {
+    cat <<EOF >>"$1"
+		"device/google/lynx",
+		"hardware/google/av",
+		"hardware/google/gchips",
+		"hardware/google/graphics/common",
+		"hardware/google/interfaces",
+		"hardware/google/pixel",
+		"hardware/qcom/wlan/wcn6740",
+EOF
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
 
