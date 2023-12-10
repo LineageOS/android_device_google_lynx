@@ -24,8 +24,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=lynx \
-    PRIVATE_BUILD_DESC="lynx-user 14 UP1A.231105.003 11010452 release-keys"
+    PRIVATE_BUILD_DESC="lynx-user 14 UQ1A.231205.015 11084887 release-keys"
 
-BUILD_FINGERPRINT := google/lynx/lynx:14/UP1A.231105.003/11010452:user/release-keys
+BUILD_FINGERPRINT := google/lynx/lynx:14/UQ1A.231205.015/11084887:user/release-keys
 
 $(call inherit-product, vendor/google/lynx/lynx-vendor.mk)
