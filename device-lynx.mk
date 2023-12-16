@@ -80,9 +80,10 @@ PRODUCT_COPY_FILES += \
     device/google/lynx/nfc/libnfc-nci-lynx.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf
 
 PRODUCT_PACKAGES += \
-	NfcNci \
+	$(RELEASE_PACKAGE_NFC_STACK) \
 	Tag \
-	android.hardware.nfc-service.st
+	android.hardware.nfc-service.st \
+	NfcOverlayLynx
 
 # SecureElement
 PRODUCT_PACKAGES += \
@@ -149,6 +150,8 @@ include device/google/lynx/bluetooth/qti_default.mk
 GOODIX_CONFIG_BUILD_VERSION := g7_trusty
 ifneq (,$(filter AP1%,$(RELEASE_PLATFORM_VERSION)))
 PRODUCT_SOONG_NAMESPACES += vendor/google_devices/lynx/prebuilts/firmware/fingerprint/24Q1
+else ifneq (,$(filter AP2%,$(RELEASE_PLATFORM_VERSION)))
+PRODUCT_SOONG_NAMESPACES += vendor/google_devices/lynx/prebuilts/firmware/fingerprint/24Q2
 else
 PRODUCT_SOONG_NAMESPACES += vendor/google_devices/lynx/prebuilts/firmware/fingerprint/trunk
 endif
@@ -175,6 +178,8 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_SOONG_NAMESPACES += vendor/google_devices/lynx/prebuilts
 ifneq (,$(filter AP1%,$(RELEASE_PLATFORM_VERSION)))
 PRODUCT_SOONG_NAMESPACES += vendor/google_devices/lynx/prebuilts/trusty/24Q1
+else ifneq (,$(filter AP2%,$(RELEASE_PLATFORM_VERSION)))
+PRODUCT_SOONG_NAMESPACES += vendor/google_devices/lynx/prebuilts/trusty/24Q2
 else
 PRODUCT_SOONG_NAMESPACES += vendor/google_devices/lynx/prebuilts/trusty/trunk
 endif
@@ -218,7 +223,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Increment the SVN for any official public releases
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.build.svn=25
+    ro.vendor.build.svn=29
 
 # Set support hide display cutout feature
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -280,7 +285,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 ##Audio Vendor property
 PRODUCT_PROPERTY_OVERRIDES += \
-	persist.vendor.audio.cca.enabled=true
+	persist.vendor.audio.cca.enabled=false
 
 # userdebug specific
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
