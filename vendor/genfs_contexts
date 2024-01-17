@@ -27,6 +27,7 @@ genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-7/i2c-p9222                 
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-7/i2c-p9222/power_supply    u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-8/i2c-p9222                 u:object_r:sysfs_wlc:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-8/i2c-p9222/power_supply    u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-8/8-0061                    u:object_r:sysfs_wlc:s0
 
 # System Suspend
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-0/i2c-p9222/power_supply/wireless/wakeup    u:object_r:sysfs_wakeup:s0
@@ -50,6 +51,7 @@ genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-8/i2c-p9222/wakeup          
 genfscon sysfs /devices/platform/14520000.pcie/pci0001:00/0001:00:00.0/0001:01:00.0/mhi0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/14520000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/mhi0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/qcom,cnss-qca6490/wakeup                                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-8/8-0061/wakeup/wakeup                      u:object_r:sysfs_wakeup:s0
 
 # PowerStats
 genfscon sysfs /kernel/wifi/power_stats    u:object_r:sysfs_power_stats:s0
