@@ -5,6 +5,7 @@ genfscon sysfs /devices/platform/10970000.hsi2c/i2c-4/i2c-cs40l26a             u
 genfscon sysfs /devices/soc0/soc_id      u:object_r:vendor_location_sysfs:s0
 genfscon proc /debugdriver/driverdump    u:object_r:vendor_proc_wifi_dbg:s0
 genfscon sysfs /devices/platform/14520000.pcie/pci0001:00/0001:00:00.0/0001:01:00.0/net    u:object_r:sysfs_net:s0
+genfscon sysfs /devices/platform/14520000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net    u:object_r:sysfs_net:s0
 genfscon sysfs /class/remoteproc     u:object_r:sysfs_cnss_daemon:s0
 
 # BMS
