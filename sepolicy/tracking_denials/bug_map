@@ -1,1 +1,2 @@
 kernel vendor_charger_debugfs dir b/305600791
+hal_bluetooth_default vendor_data_file dir b/318453067
