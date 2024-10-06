@@ -1,0 +1,1 @@
+dontaudit kernel vendor_battery_debugfs:dir search;
