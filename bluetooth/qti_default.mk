@@ -20,10 +20,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 	bluetooth.profile.ccp.server.enabled?=false \
 	bluetooth.profile.vcp.controller.enabled?=false \
 
-# Bluetotoh Auto On feature
-PRODUCT_PRODUCT_PROPERTIES += \
-	bluetooth.server.automatic_turn_on=true
-
 # Bluetooth HAL
 PRODUCT_PACKAGES += \
 	android.hardware.bluetooth.prebuilt.xml \
