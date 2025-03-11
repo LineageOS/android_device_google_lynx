@@ -45,7 +45,7 @@ vendor/bin/hw/vendor.google.wireless_charger.service-default
 vendor/bin/init.camera.set-interrupts-ownership
 vendor/bin/init.radio.sh
 vendor/bin/loc_launcher
-vendor/bin/lowi-server;DISABLE_CHECKELF
+vendor/bin/lowi-server
 vendor/bin/modem_logging_control
 vendor/bin/rfsd
 vendor/bin/shared_modem_platform

@@ -47,7 +47,6 @@ lib_fixups: lib_fixups_user_type = {
         'com.google.edgetpu_app_service-V3-ndk',
         'com.google.edgetpu_vendor_service-V2-ndk',
     ): lib_fixup_vendor_suffix,
-    'libwpa_client': lib_fixup_remove,
     'android.hardware.sensors-V2-ndk': lib_fixup_remove,
 }
 
@@ -78,10 +77,8 @@ module = ExtractUtilsModule(
 
 def fix_vendor_file_list(file_list: FileList):
     # flp.default & gps.default have incorrect SONAME
-    # lowi-server depends on libwpa_client, which is a gnu makefile target
     # gpsd depends on android.hardware.sensors-V2-ndk & android.hardware.sensors-V3-ndk
     disable_checkelf_file_paths = [
-        'vendor/bin/lowi-server',
         'vendor/bin/hw/gpsd',
         'vendor/lib64/hw/flp.default.so',
         'vendor/lib64/hw/gps.default.so',
