@@ -25,9 +25,9 @@ PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="lynx-user 15 BP1A.250505.005.B1 13277630 release-keys" \
-    BuildFingerprint=google/lynx/lynx:15/BP1A.250505.005.B1/13277630:user/release-keys \
+PRODUCT_BUILD_PROP_OVERRIDES := \
+    BuildDesc="lynx-user 16 BP2A.250605.031.A2 13578606 release-keys" \
+    BuildFingerprint=google/lynx/lynx:16/BP2A.250605.031.A2/13578606:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
 $(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)
