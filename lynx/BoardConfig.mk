@@ -46,12 +46,6 @@ include device/google/gs-common/check_current_prebuilt/check_current_prebuilt.mk
 include device/google/lynx/sepolicy/lynx-sepolicy.mk
 include device/google/gs201/wifi/qcom/BoardConfig-wifi.mk
 
-ifneq (,$(RELEASE_ETM_IN_USERDEBUG_ENG))
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
--include device/google/common/etm/BoardUserdebugModules.mk
-endif
-endif
-
 DEVICE_PATH := device/google/lynx
 VENDOR_PATH := vendor/google/lynx
 include $(DEVICE_PATH)/$(TARGET_BOOTLOADER_BOARD_NAME)/BoardConfigLineage.mk

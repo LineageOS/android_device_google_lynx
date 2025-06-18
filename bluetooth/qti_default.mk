@@ -84,11 +84,6 @@ PRODUCT_COPY_FILES += \
 	device/google/lynx/bluetooth/bluetooth_power_limits_Lynx_G0DZQ_JP.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits_G0DZQ_JP.csv \
 	device/google/lynx/bluetooth/bluetooth_power_limits_Lynx_G82U8_JP.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits_G82U8_JP.csv
 
-# Bluetooth SAR test tools
-ifneq (,$(filter true, $(TARGET_USE_QTI_BT_SAR_V1_1) $(TARGET_USE_QTI_BT_SAR)))
-   PRODUCT_PACKAGES_ENG += bluetooth_sar_test
-endif
-
 # Bluetooth (Vendor) SoC, BDA in device tree, and WiPower
 PRODUCT_PROPERTY_OVERRIDES += \
 	vendor.qcom.bluetooth.soc=hastings \
@@ -96,12 +91,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.vendor.bluetooth.emb_wp_mode=false \
 	ro.vendor.bluetooth.wipower=false
 
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.vendor.service.bdroid.soclog=true \
-	persist.vendor.service.bdroid.fwsnoop=true
-else
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.service.bdroid.soclog=false \
 	persist.vendor.service.bdroid.fwsnoop=false
-endif
