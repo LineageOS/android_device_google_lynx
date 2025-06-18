@@ -19,13 +19,6 @@ TARGET_LINUX_KERNEL_VERSION := $(RELEASE_KERNEL_LYNX_VERSION)
 TARGET_KERNEL_DIR ?= $(RELEASE_KERNEL_LYNX_DIR)
 TARGET_BOARD_KERNEL_HEADERS ?= $(RELEASE_KERNEL_LYNX_DIR)/kernel-headers
 
-$(call inherit-product-if-exists, vendor/google_devices/lynx/prebuilts/device-vendor-lynx.mk)
-$(call inherit-product-if-exists, vendor/google_devices/gs201/prebuilts/device-vendor.mk)
-$(call inherit-product-if-exists, vendor/google_devices/gs201/proprietary/device-vendor.mk)
-$(call inherit-product-if-exists, vendor/google_devices/lynx/proprietary/lynx/device-vendor-lynx.mk)
-$(call inherit-product-if-exists, vendor/google_devices/lynx/proprietary/device-vendor.mk)
-$(call inherit-product-if-exists, vendor/google_devices/lynx/proprietary/WallpapersLynx.mk)
-
 DEVICE_PACKAGE_OVERLAYS += device/google/lynx/lynx/overlay
 
 include device/google/lynx/audio/lynx/audio-tables.mk
@@ -157,11 +150,6 @@ include device/google/lynx/bluetooth/qti_default.mk
 # 	ro.hardware.keystore=software \
 # 	ro.hardware.gatekeeper=software
 
-# Fingerprint HAL
-GOODIX_CONFIG_BUILD_VERSION := g7_trusty
-$(call inherit-product-if-exists, vendor/goodix/udfps/configuration/udfps_common.mk)
-$(call inherit-product-if-exists, vendor/goodix/udfps/configuration/udfps_shipping.mk)
-
 # Vibrator HAL
 $(call soong_config_set,haptics,kernel_ver,v$(subst .,_,$(TARGET_LINUX_KERNEL_VERSION)))
 ADAPTIVE_HAPTICS_FEATURE := adaptive_haptics_v1
@@ -178,9 +166,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Override Output Distortion Gain
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.audio.hapticgenerator.distortion.output.gain=0.29
-
-# Trusty liboemcrypto.so
-PRODUCT_SOONG_NAMESPACES += vendor/google_devices/lynx/prebuilts
 
 # Location
 PRODUCT_COPY_FILES += \
