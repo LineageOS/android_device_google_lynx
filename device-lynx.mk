@@ -15,9 +15,9 @@
 #
 
 TARGET_LINUX_KERNEL_VERSION := $(RELEASE_KERNEL_LYNX_VERSION)
-# Keeps flexibility for kasan and ufs builds
-TARGET_KERNEL_DIR ?= $(RELEASE_KERNEL_LYNX_DIR)
-TARGET_BOARD_KERNEL_HEADERS ?= $(RELEASE_KERNEL_LYNX_DIR)/kernel-headers
+TARGET_KERNEL_DEVICE := lynx
+TARGET_KERNEL_DIR := device/google/$(TARGET_KERNEL_DEVICE)-kernels/$(TARGET_LINUX_KERNEL_VERSION)
+TARGET_KERNEL_PLATFORM_SOURCE := google/gs-$(TARGET_LINUX_KERNEL_VERSION)
 
 DEVICE_PACKAGE_OVERLAYS += device/google/lynx/lynx/overlay
 
@@ -38,14 +38,6 @@ PRODUCT_COPY_FILES += \
 # Recovery files
 PRODUCT_COPY_FILES += \
         device/google/lynx/conf/init.recovery.device.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.lynx.rc
-
-# insmod files. Kernel 5.10 prebuilts don't provide these yet, so provide our
-# own copy if they're not in the prebuilts.
-# TODO(b/369686096): drop this when 5.10 is gone.
-ifeq ($(wildcard $(TARGET_KERNEL_DIR)/init.insmod.*.cfg),)
-PRODUCT_COPY_FILES += \
-	device/google/lynx/init.insmod.lynx.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/init.insmod.lynx.cfg
-endif
 
 # Camera
 PRODUCT_COPY_FILES += \
