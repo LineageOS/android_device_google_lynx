@@ -180,7 +180,9 @@ else
 endif
 
 # Wifi HAL
-PRODUCT_SOONG_NAMESPACES += hardware/qcom/wlan/wcn6740
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcomf/wlan \
+    hardware/qcom/wlan/wcn6740
 
 # DCK properties based on target
 PRODUCT_PROPERTY_OVERRIDES += \
