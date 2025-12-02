@@ -1,2 +1,0 @@
-# Camera
-set_prop(vendor_init, vendor_camera_prop)

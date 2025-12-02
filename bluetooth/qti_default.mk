@@ -29,8 +29,6 @@ DEVICE_MANIFEST_FILE += \
 	device/google/lynx/bluetooth/manifest_bluetooth.xml
 DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += device/google/lynx/bluetooth/device_framework_matrix_product.xml
 
-BOARD_SEPOLICY_DIRS += device/google/lynx/sepolicy/bluetooth
-
 PRODUCT_PACKAGES += \
 	android.hardware.bluetooth.prebuilt.xml \
 	android.hardware.bluetooth_le.prebuilt.xml

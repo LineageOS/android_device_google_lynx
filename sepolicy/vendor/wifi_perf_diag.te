@@ -1,3 +1,0 @@
-userdebug_or_eng(`
-  allow wifi_perf_diag vendor_wifi_vendor_data_file:dir rw_dir_perms;
-')
