@@ -1,0 +1,7 @@
+domain_auto_trans(dump_touch, predump_touch_exec, predump_touch)
+
+pixel_bugreport(dump_touch)
+
+allow dump_touch vendor_toolbox_exec:file execute_no_trans;
+allow dump_touch vendor_touch_dump_file:dir r_dir_perms;
+allow dump_touch vendor_touch_dump_file:file rw_file_perms;

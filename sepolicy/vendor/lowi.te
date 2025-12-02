@@ -1,0 +1,23 @@
+type lowi_server, domain;
+type lowi_server_exec, exec_type, file_type, vendor_file_type;
+
+hwbinder_use(lowi_server)
+
+unix_socket_send(lowi_server, vendor_wifihal, hal_wifi_default)
+unix_socket_send(lowi_server, vendor_wifihal, hal_wifi_ext)
+unix_socket_send(lowi_server, vendor_wifihal, hal_wifi_supplicant_default)
+unix_socket_send(lowi_server, vendor_wifihal, vendor_wifihal_socket)
+
+allow lowi_server self:udp_socket create_socket_perms;
+allow lowi_server self:{ netlink_generic_socket netlink_route_socket } create_socket_perms_no_ioctl;
+allow lowi_server vendor_location:fd use;
+allow lowi_server vendor_location:unix_dgram_socket { read sendto write };
+allow lowi_server vendor_location_socket:dir rw_dir_perms;
+allow lowi_server vendor_location_socket:{ lnk_file sock_file } create_file_perms;
+allow lowi_server vendor_wifi_vendor_data_file:dir rw_dir_perms;
+allow lowi_server vendor_wifihal_socket:dir rw_dir_perms;
+allow lowi_server vendor_wifihal_socket:sock_file create_file_perms;
+allow lowi_server wpa_data_file:dir rw_dir_perms;
+allow lowi_server wpa_data_file:sock_file create_file_perms;
+
+allowxperm lowi_server self:udp_socket ioctl { SIOCDEVPRIVATE_1 SIOCGIFFLAGS SIOCGIFHWADDR SIOCGIFINDEX SIOCIWFIRSTPRIV_05 SIOCIWFIRSTPRIV_11 SIOCIWFIRSTPRIV_13 };
