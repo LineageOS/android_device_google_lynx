@@ -1,0 +1,5 @@
+add_hwservice(hal_bluetooth_default, hal_bluetooth_coexistence_hwservice)
+
+set_prop(hal_bluetooth_default, vendor_bluetooth_prop)
+
+allow hal_bluetooth_default bt_device:chr_file rw_file_perms;

@@ -1,0 +1,5 @@
+type vendor_gti_prop, touch_property_type;
+
+system_public_prop(vendor_gti_prop)
+
+vendor_internal_prop(vendor_wlcservice_prop)

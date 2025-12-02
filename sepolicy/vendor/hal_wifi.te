@@ -1,0 +1,15 @@
+r_dir_file(hal_wifi_default, vendor_proc_wifi_dbg)
+
+set_prop(hal_wifi_default, vendor_wifi_version)
+
+unix_socket_connect(hal_wifi, vendor_location, vendor_location)
+
+unix_socket_send(hal_wifi_default, property, lowi_server)
+unix_socket_send(hal_wifi_default, property, vendor_location)
+
+allow hal_wifi_default vendor_location_socket:dir rw_dir_perms;
+allow hal_wifi_default vendor_location_socket:{ lnk_file sock_file } create_file_perms;
+allow hal_wifi_default vendor_wifi_vendor_data_file:dir rw_dir_perms;
+allow hal_wifi_default vendor_wifihal_socket:dir rw_dir_perms;
+allow hal_wifi_default vendor_wifihal_socket:sock_file create_file_perms;
+allow hal_wifi_default vendor_wlan_device:chr_file w_file_perms;

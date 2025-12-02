@@ -1,2 +1,2 @@
-# Wifi
+type vendor_gnss_device, dev_type;
 type vendor_wlan_device, dev_type;

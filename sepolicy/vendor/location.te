@@ -1,0 +1,13 @@
+type vendor_location, domain;
+type vendor_location_exec, exec_type, file_type, vendor_file_type;
+
+domain_auto_trans(vendor_location, lowi_server_exec, lowi_server)
+
+init_daemon_domain(vendor_location)
+
+allow vendor_location hal_wifi_default:unix_dgram_socket { read sendto write };
+allow vendor_location hal_wifi_ext:unix_dgram_socket { read sendto write };
+allow vendor_location lowi_server:unix_dgram_socket { read sendto write };
+allow vendor_location vendor_location_socket:dir rw_dir_perms;
+allow vendor_location vendor_location_socket:{ lnk_file sock_file } create_file_perms;
+allow vendor_location vendor_location_sysfs:file create_file_perms;
