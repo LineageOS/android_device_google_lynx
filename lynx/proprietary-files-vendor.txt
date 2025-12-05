@@ -100,6 +100,7 @@ vendor/etc/audio_policy_configuration_a2dp_offload_disabled.xml
 vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml
 vendor/etc/audio_policy_configuration_le_offload_disabled.xml
 vendor/etc/audio_policy_volumes.xml
+vendor/etc/bluetooth_audio_policy_configuration_7_0.xml
 vendor/etc/bluetooth_power_limits.csv
 vendor/etc/bluetooth_power_limits_G0DZQ_CA.csv
 vendor/etc/bluetooth_power_limits_G0DZQ_EU.csv
