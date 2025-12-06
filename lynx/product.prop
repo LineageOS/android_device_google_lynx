@@ -1,0 +1,23 @@
+# Bluetooth
+bluetooth.device_id.product_id=16651
+bluetooth.profile.bap.unicast.client.enabled?=false
+bluetooth.profile.ccp.server.enabled?=false
+bluetooth.profile.csip.set_coordinator.enabled?=false
+bluetooth.profile.hap.client.enabled?=false
+bluetooth.profile.mcp.server.enabled?=false
+bluetooth.profile.vcp.controller.enabled?=false
+persist.bluetooth.a2dp_aac.vbr_supported=true
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+persist.bluetooth.a2dp_offload.disabled=false
+ro.bluetooth.a2dp_offload.supported=true
+ro.bluetooth.leaudio_switcher.supported=false
+
+# Cutout
+ro.support_hide_display_cutout=true
+
+# EUICC
+euicc.seamless_transfer_enabled_in_non_qs=true
+
+# Quick start
+ro.quick_start.device_id=lynx
+ro.quick_start.oem_id=00e0

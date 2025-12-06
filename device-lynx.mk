@@ -40,8 +40,10 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.ese.xml \
 	frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml
 
-# Bluetooth HAL and Pixel extension
-include device/google/lynx/bluetooth/qti_default.mk
+# Bluetooth HAL
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.prebuilt.xml \
+    android.hardware.bluetooth_le.prebuilt.xml
 
 # Wifi HAL
 PRODUCT_SOONG_NAMESPACES += \
@@ -52,14 +54,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
 	WifiOverlay2023Mid
 
-# Set support hide display cutout feature
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.support_hide_display_cutout=true
-
-# Set support One-handed mode
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.support_one_handed_mode=true
-
 # Hide cutout overlays
 PRODUCT_PACKAGES += \
     NoCutoutOverlay \
@@ -69,27 +63,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
-# The default value of this variable is false and should only be set to true when
-# the device allows users to enable the seamless transfer feature.
-PRODUCT_PRODUCT_PROPERTIES += \
-   euicc.seamless_transfer_enabled_in_non_qs=true
-
 # SKU specific RROs
 PRODUCT_PACKAGES += \
     SettingsOverlayG82U8 \
     SettingsOverlayG0DZQ \
     SettingsOverlayGHL1X \
     SettingsOverlayGWKK3
-
-# Quick Start device-specific settings
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.quick_start.oem_id=00e0 \
-    ro.quick_start.device_id=lynx
-
-# Bluetooth device id
-# Raven: 0x410B
-PRODUCT_PRODUCT_PROPERTIES += \
-    bluetooth.device_id.product_id=16651
 
 # ANGLE - Almost Native Graphics Layer Engine
 PRODUCT_PACKAGES += \
