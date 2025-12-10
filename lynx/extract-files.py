@@ -57,6 +57,16 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/etc/init/init.storage.rc',
     ) : blob_fixup()
         .regex_replace('ro.build.type=userdebug', 'ro.debuggable=1'),
+    (
+        'vendor/bin/hw/android.hardware.composer.hwc3-service.pixel',
+        'vendor/bin/hw/android.hardware.contexthub-service.generic',
+        'vendor/bin/hw/citadeld',
+        'vendor/lib64/libExynosHWCService.so',
+        'vendor/lib64/libexynosdisplay.so',
+        'vendor/lib64/libnos_citadeld_proxy.so',
+        'vendor/lib64/libpixelstats.so',
+    ): blob_fixup()
+        .replace_needed('pixelatoms-cpp.so', 'pixelatoms-cpp-legacy.so'),
 }  # fmt: skip
 
 extract_fns: extract_fns_user_type = {
