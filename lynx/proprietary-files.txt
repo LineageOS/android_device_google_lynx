@@ -185,3 +185,7 @@ system_ext/priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED
 # Watchdog
 system_ext/bin/gs_watchdogd
 system_ext/etc/init/init.gs_watchdogd.rc
+
+# vendor partition
+
+vendor/lib64/pixelatoms-cpp-legacy.so|2fc624a26aa6655bc8df856cd1b030216d5a99ca

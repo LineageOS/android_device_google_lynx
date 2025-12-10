@@ -1135,8 +1135,6 @@ lib/android.hardware.contexthub-V3-ndk.so
 lib/android.hardware.contexthub-V4-ndk.so
 lib64/android.hardware.contexthub-V3-ndk.so
 lib64/android.hardware.contexthub-V4-ndk.so
-lib64/chre_atoms_log.so
-lib64/chremetrics-cpp.so
 
 # Dumpstate
 lib64/android.hardware.dumpstate-V1-ndk.so
@@ -1167,16 +1165,6 @@ lib64/libcppbor.so
 lib64/libcppcose_rkp.so
 lib64/libkeymaster_portable.so
 lib64/libkeymint_support_V3.so
-lib64/libnos.so
-lib64/libnos_client_citadel.so
-lib64/libnos_datagram.so
-lib64/libnos_datagram_citadel.so
-lib64/libnos_feature.so
-lib64/libnos_transport.so
-lib64/libnosprotos.so
-lib64/nos_app_avb.so
-lib64/nos_app_keymaster.so
-lib64/nos_app_weaver.so
 lib64/pixelpowerstats_provider_aidl_interface-cpp.so
 
 # Powerstats

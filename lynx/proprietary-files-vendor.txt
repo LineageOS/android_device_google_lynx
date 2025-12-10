@@ -1937,6 +1937,8 @@ vendor/lib64/audio_tunnel_aoc.so
 vendor/lib64/audio_usb_aoc.so
 vendor/lib64/audio_waves_aoc.so
 vendor/lib64/biometricsuez.so
+vendor/lib64/chre_atoms_log.so
+vendor/lib64/chremetrics-cpp.so
 vendor/lib64/com.google.edgetpu.tachyon-ndk.so
 vendor/lib64/com.google.edgetpu_app_service-V3-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/com.google.edgetpu_vendor_service-V2-ndk.so;MODULE_SUFFIX=_vendor
@@ -2031,7 +2033,14 @@ vendor/lib64/libmdmdetect.so
 vendor/lib64/libmemtrack-pixel.so
 vendor/lib64/libmetrics_logger.so
 vendor/lib64/libmodem_svc_proto_legacy_soong.so
+vendor/lib64/libnos.so
 vendor/lib64/libnos_citadeld_proxy.so
+vendor/lib64/libnos_client_citadel.so
+vendor/lib64/libnos_datagram.so
+vendor/lib64/libnos_datagram_citadel.so
+vendor/lib64/libnos_feature.so
+vendor/lib64/libnos_transport.so
+vendor/lib64/libnosprotos.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/liboemservice.so
 vendor/lib64/libperipheral_client.so
@@ -2068,6 +2077,9 @@ vendor/lib64/modem_clock_manager.so
 vendor/lib64/modem_clock_manager_impl.so
 vendor/lib64/modem_log_constants.so
 vendor/lib64/modem_log_dumper.so
+vendor/lib64/nos_app_avb.so
+vendor/lib64/nos_app_keymaster.so
+vendor/lib64/nos_app_weaver.so
 vendor/lib64/sensors.usf.so
 vendor/lib64/soundfx/liboffloadeffect.so
 vendor/lib64/vendor.google.audiometricext@1.0.so
