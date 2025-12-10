@@ -174,6 +174,10 @@ system_ext/etc/permissions/oemrilhook.xml
 system_ext/framework/oemrilhook.jar
 system_ext/priv-app/OemRilService/OemRilService.apk;PRESIGNED
 
+# VINTF
+system_ext/etc/vintf/aocx_framework_compatibility_matrix_system_ext|92a4851a69b194694bb81419ed84da507d29342c
+system_ext/etc/vintf/imageprocessing_hal_framework_compatibility_matrix_system_ext|0f6d5b572fa34901e0bd4cfa8b5121e6aa19a74d
+
 # VZW
 system_ext/etc/permissions/vzw_mvs_permissions.xml
 system_ext/priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED
