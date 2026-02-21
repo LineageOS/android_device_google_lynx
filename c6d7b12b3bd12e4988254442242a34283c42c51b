@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c7a56699_f404f5ce",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36704
+      },
+      "writtenOn": "2026-02-21T23:14:52Z",
+      "side": 1,
+      "message": "Hi there! I\u0027ve added you as reviewer since you appear to own several PRs for lynx devices in the past :)",
+      "revId": "c6d7b12b3bd12e4988254442242a34283c42c51b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
