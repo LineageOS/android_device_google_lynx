@@ -69,6 +69,24 @@
       "parentUuid": "81431ea1_552c37e6",
       "revId": "873057977d325c3d64b31583a677cd98b392eaa7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "19739d52_24dacb01",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36704
+      },
+      "writtenOn": "2026-02-26T14:52:11Z",
+      "side": 1,
+      "message": "Thanks for your reply :3\n\nI understand what you meant now. Could you check my new patches? Since the filepaths don\u0027t look the same I simply set the author name and changeId manually instead of cherrypicking",
+      "parentUuid": "929a7d6f_e22269c0",
+      "revId": "873057977d325c3d64b31583a677cd98b392eaa7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
