@@ -51,6 +51,24 @@
       "parentUuid": "6f6695ef_3cd20332",
       "revId": "873057977d325c3d64b31583a677cd98b392eaa7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "929a7d6f_e22269c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15346
+      },
+      "writtenOn": "2026-02-26T06:02:04Z",
+      "side": 1,
+      "message": "tldr git cherry-pick the original patch so that the git author is the same. Refer to git docs for more info",
+      "parentUuid": "81431ea1_552c37e6",
+      "revId": "873057977d325c3d64b31583a677cd98b392eaa7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
