@@ -8,6 +8,6 @@ $(call inherit-product, device/google/lynx/device-lynx.mk)
 
 PRODUCT_NAME := aosp_lynx
 PRODUCT_DEVICE := lynx
-PRODUCT_MODEL := AOSP on Lynx
-PRODUCT_BRAND := Android
+PRODUCT_MODEL := Pixel 7a
+PRODUCT_BRAND := google
 PRODUCT_MANUFACTURER := Google
