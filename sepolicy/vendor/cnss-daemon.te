@@ -7,7 +7,8 @@ net_domain(cnss-daemon)
 init_daemon_domain(cnss-daemon)
 
 allow cnss-daemon proc_net:file rw_file_perms;
-allow cnss-daemon self:{ netlink_generic_socket qipcrtr_socket } create_socket_perms_no_ioctl;
+allow cnss-daemon self:netlink_generic_socket create_socket_perms_no_ioctl;
+allow cnss-daemon self:qipcrtr_socket create_socket_perms_no_ioctl;
 allow cnss-daemon sysfs_cnss_daemon:dir r_dir_perms;
 allow cnss-daemon sysfs_cnss_daemon:file r_file_perms;
 allow cnss-daemon vendor_wifi_vendor_data_file:dir create_dir_perms;

@@ -18,3 +18,5 @@ genfscon sysfs /devices/virtual/goog_touch_interface/gti.0/wakeup u:object_r:sys
 genfscon sysfs /devices/virtual/goog_touch_interface/gti.1/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/pps/pps0/assert_elapsed u:object_r:sysfs_gps_assert:s0
 genfscon sysfs /kernel/wifi/power_stats u:object_r:sysfs_power_stats:s0
+genfscon sysfs /module/cl_dsp_core/version u:object_r:sysfs_vibrator:s0
+genfscon sysfs /module/cs40l26_core/version u:object_r:sysfs_vibrator:s0

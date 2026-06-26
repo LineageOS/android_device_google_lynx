@@ -6,8 +6,9 @@ unix_socket_send(lowi_server, vendor_wifihal, hal_wifi_default)
 unix_socket_send(lowi_server, vendor_wifihal, hal_wifi_ext)
 
 allow lowi_server hal_wifi_supplicant_default:unix_dgram_socket sendto;
+allow lowi_server self:netlink_generic_socket create_socket_perms_no_ioctl;
+allow lowi_server self:netlink_route_socket create_socket_perms_no_ioctl;
 allow lowi_server self:udp_socket create_socket_perms;
-allow lowi_server self:{ netlink_generic_socket netlink_route_socket } create_socket_perms_no_ioctl;
 allow lowi_server vendor_location:fd use;
 allow lowi_server vendor_location:unix_dgram_socket { read sendto write };
 allow lowi_server vendor_location_socket:dir rw_dir_perms;

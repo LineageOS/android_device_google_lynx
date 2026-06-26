@@ -1,4 +1,5 @@
 com.google.face.debug.IDebugHost/default u:object_r:hal_face_debug_service:s0
 com.google.face.debug.IDebugManager/default u:object_r:hal_face_debug_service:s0
 com.google.pixel.shared_modem_platform.ISharedModemPlatform/default u:object_r:hal_shared_modem_platform_service:s0
+vendor.google.hardware.biometrics.face.IFaceExt/default u:object_r:hal_face_ext_service:s0
 vendor.google.wireless_charger.service.IWlcService/default u:object_r:hal_wlcservice_service:s0
