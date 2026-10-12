@@ -82,4 +82,11 @@
 
     <!-- The time (in ms) needed to trigger the device entry icon view's long-press affordance -->
     <integer name="config_lockIconLongPress">100</integer>
+
+    <!-- The properties of the face auth front camera for outer display in pixels -->
+    <integer-array name="config_face_auth_props">
+        <item>540</item>
+        <item>68</item>
+        <item>34</item>
+    </integer-array>
 </resources>
